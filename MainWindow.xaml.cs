@@ -41,9 +41,9 @@ namespace WPF_Rassokhin_PR3
 
             Itog.Text += Environment.NewLine + "r = " + r.ToString();
 
-            double l = Math.Sqrt(h * h + (R - r * r));
+            double l = Math.Sqrt(h * h + ((R - r * r)* (R - r * r)));
 
-            Itog.Text += Environment.NewLine + "Результат l" + l.ToString();
+            Itog.Text += Environment.NewLine + "Результат = " + l.ToString();
         }
     }
 }
